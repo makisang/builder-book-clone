@@ -28,6 +28,7 @@ const options = {
   useFindAndModify: false,
   useUnifiedTopology: true,
 };
+console.log('MONGO_URL', MONGO_URL);
 mongoose.connect(MONGO_URL, options);
 
 const port = process.env.PORT || 8000;
