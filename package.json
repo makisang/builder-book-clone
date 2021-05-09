@@ -8,7 +8,6 @@
     "start": "node server/server.js",
     "lint": "eslint '**/*.js' '**/*.jsx'",
     "test": "jest --coverage",
-    "heroku-postbuild": "NODE_ENV=dev nodemon server/server.js --watch server"
   },
   "jest": {
     "coverageDirectory": "./.coverage"
