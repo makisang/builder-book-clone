@@ -28,6 +28,9 @@ const options = {
   useFindAndModify: false,
   useUnifiedTopology: true,
 };
+console.log('env', process.env);
+console.log('MONGO_URL_TEST', process.env.MONGO_URL_TEST);
+console.log('MONGO_URL', process.env.MONGO_URL);
 console.log('MONGO_URL', MONGO_URL);
 mongoose.connect(MONGO_URL, options);
 
